@@ -1,0 +1,15 @@
+{
+  "name": "题库笔记",
+  "short_name": "题库笔记",
+  "start_url": "/tiku/",
+  "scope": "/tiku/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/tiku/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}

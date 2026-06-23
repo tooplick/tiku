@@ -1,31 +1,40 @@
-# 题库索引
+# 题库笔记
 
-## Axure
+基于 Hugo 构建的题库复习笔记站点，部署在 [GitHub Pages](https://tooplick.github.io/tiku/)。
 
-- [简答.md](Axure/简答.md)
-- [判断.md](Axure/判断.md)
-- [填空.md](Axure/填空.md)
-- [选择.md](Axure/选择.md)
+## 科目
 
-## Python
+- **Axure** - Axure RP 10 相关题目
+- **Python** - Python 编程基础题目
+- **软件测试** - 软件测试理论与实践题目
+- **Vue** - Vue.js 框架相关题目
+- **毛概** - 毛泽东思想概论题目
 
-- [Python选择题.md](Python/Python选择题.md)
-- [Python判断题.md](Python/Python判断题.md)
-- [Python填空题.md](Python/Python填空题.md)
-- [Python简答题.md](Python/Python简答题.md)
-- [Python大题.md](Python/Python大题.md)
+## 本地开发
 
-## Softwore-test
+```bash
+# 安装 Hugo (需要 extended 版本 >= 0.158.0)
+# 启动开发服务器
+hugo server -D
 
-- [Softwore-test选择题1.md](Softwore-test/Softwore-test选择题1.md)
-- [Softwore-test选择题2.md](Softwore-test/Softwore-test选择题2.md)
-- [Softwore-test判断题.md](Softwore-test/Softwore-test判断题.md)
-- [Softwore-test填空题.md](Softwore-test/Softwore-test填空题.md)
-- [Softwore-test简答题.md](Softwore-test/Softwore-test简答题.md)
-- [Softwore-test程序填空题.md](Softwore-test/Softwore-test程序填空题.md)
+# 构建生产版本
+hugo --minify
+```
 
-## Vue
+## 部署
 
-- [Vue判断题.md](Vue/Vue判断题.md)
-- [Vue单选题.md](Vue/Vue单选题.md)
-- [Vue填空题.md](Vue/Vue填空题.md)
+站点通过 GitHub Actions 自动部署到 GitHub Pages。推送到 `main` 分支即触发部署。
+
+## 目录结构
+
+```
+content/
+├── _index.md          # 首页
+└── docs/
+    ├── _index.md      # 文档根目录
+    ├── axure/         # Axure 题库
+    ├── python/        # Python 题库
+    ├── software-test/ # 软件测试题库
+    ├── vue/           # Vue 题库
+    └── mao/           # 毛概题库
+```
