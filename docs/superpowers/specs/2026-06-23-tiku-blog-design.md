@@ -9,7 +9,7 @@
 - **静态站点生成器**：Hugo
 - **主题**：Hugo Book（文档风格，侧边栏导航）
 - **部署**：GitHub Actions → GitHub Pages
-- **访问地址**：`https://<username>.github.io/tiku/`
+- **访问地址**：`https://tooplick.github.io/tiku/`
 
 ## 项目结构
 
@@ -110,7 +110,7 @@ weight: 1
 `hugo.toml` 核心配置：
 
 ```toml
-baseURL = "https://<username>.github.io/tiku/"  # 替换为实际 GitHub 用户名
+baseURL = "https://tooplick.github.io/tiku/"
 languageCode = "zh-cn"
 title = "题库笔记"
 theme = "hugo-book"
@@ -119,7 +119,7 @@ theme = "hugo-book"
   BookTheme = "auto"           # 自动亮/暗色模式
   BookToC = true               # 显示目录
   BookSection = "docs"         # 文档根目录
-  BookRepo = "https://github.com/<username>/tiku"  # 替换为实际 GitHub 用户名
+  BookRepo = "https://github.com/tooplick/tiku"
 ```
 
 ## 侧边栏导航
