@@ -1,0 +1,10 @@
+baseURL = "https://tooplick.github.io/tiku/"
+languageCode = "zh-cn"
+title = "题库笔记"
+theme = "hugo-book"
+
+[params]
+  BookTheme = "auto"
+  BookToC = true
+  BookSection = "docs"
+  BookRepo = "https://github.com/tooplick/tiku"
